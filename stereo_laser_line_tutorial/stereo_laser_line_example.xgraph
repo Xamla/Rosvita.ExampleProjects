@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xgraph xmlns:xamla="http://www.xamla.com/" schemaVersion="2014-1.0" xmlns="http://schemas.xamla.com/2013/xgraph">
+  <header>
+    <metadata>
+      <created>2019-05-07T07:02:13.7604170+00:00</created>
+      <modified>2019-05-07T08:48:53.6392737+00:00</modified>
+    </metadata>
+    <dependencies />
+    <types />
+  </header>
+  <interface />
+  <body viewCenter="0, 0" zoomLevel="1">
+    <module id="Input" display="Expanded" showPreview="false" position="10, 481" type="Xamla.Graph.GraphInputModule" />
+    <module id="Output" display="Expanded" showPreview="false" position="1543, 481" type="Xamla.Graph.GraphOutputModule" />
+    <module id="Begin" display="Expanded" showPreview="false" position="10, 431" type="Xamla.Graph.GraphStartModule" />
+    <module id="End" display="Expanded" showPreview="false" position="1543, 431" type="Xamla.Graph.GraphEndModule">
+      <inputs>
+        <inputPin id="flowEnd">
+          <connection from="item5.Outputs.flowOut" />
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item4" display="Expanded" showPreview="true" position="656, 430" type="Python3.Python3ScriptFile">
+      <inputs>
+        <inputPin id="flowIn">
+          <connection from="item3.Outputs.flowOut" />
+        </inputPin>
+        <inputPin id="caption">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_stereo_laser_line"</object>
+        </inputPin>
+        <inputPin id="functionName">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_from_graph"</object>
+        </inputPin>
+        <inputPin id="outputPinNames">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">""</object>
+        </inputPin>
+        <inputPin id="useMainThread">
+          <object type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">true</object>
+        </inputPin>
+        <inputPin id="parserError">
+          <object type="Xamla.Graph.Models.ExceptionModel, Xamla.Graph.Contracts, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null">null</object>
+        </inputPin>
+        <inputPin id="path">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"stereo_laser_line_example.py"</object>
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item3" display="Expanded" showPreview="true" position="277, 431" type="Python3.Python3ScriptFile">
+      <inputs>
+        <inputPin id="flowIn">
+          <connection from="Begin.Outputs.flowStart" />
+        </inputPin>
+        <inputPin id="caption">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_stereo_laser_line"</object>
+        </inputPin>
+        <inputPin id="functionName">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_from_graph"</object>
+        </inputPin>
+        <inputPin id="outputPinNames">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">""</object>
+        </inputPin>
+        <inputPin id="useMainThread">
+          <object type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">true</object>
+        </inputPin>
+        <inputPin id="parserError">
+          <object type="Xamla.Graph.Models.ExceptionModel, Xamla.Graph.Contracts, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null">null</object>
+        </inputPin>
+        <inputPin id="path">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"stereo_laser_line_example.py"</object>
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item5" display="Expanded" showPreview="true" position="1018, 433" type="Python3.Python3ScriptFile">
+      <inputs>
+        <inputPin id="flowIn">
+          <connection from="item4.Outputs.flowOut" />
+        </inputPin>
+        <inputPin id="caption">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_stereo_laser_line"</object>
+        </inputPin>
+        <inputPin id="functionName">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"call_from_graph"</object>
+        </inputPin>
+        <inputPin id="outputPinNames">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">""</object>
+        </inputPin>
+        <inputPin id="useMainThread">
+          <object type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">true</object>
+        </inputPin>
+        <inputPin id="parserError">
+          <object type="Xamla.Graph.Models.ExceptionModel, Xamla.Graph.Contracts, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null">null</object>
+        </inputPin>
+        <inputPin id="path">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"stereo_laser_line_example.py"</object>
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item6" display="Expanded" showPreview="true" position="224, 554" type="Xamla.Graph.Controls.ViewString">
+      <inputs>
+        <inputPin id="data">
+          <connection from="item3.Outputs.output0" />
+        </inputPin>
+        <inputPin id="input">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"only return laser line client, rospy is already initialized"</object>
+        </inputPin>
+        <inputPin id="textAreaWidth">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">281</object>
+        </inputPin>
+        <inputPin id="textAreaHeight">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">38</object>
+        </inputPin>
+        <inputPin id="fontSize">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">14</object>
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item7" display="Expanded" showPreview="true" position="585, 554" type="Xamla.Graph.Controls.ViewString">
+      <inputs>
+        <inputPin id="data">
+          <connection from="item4.Outputs.output0" />
+        </inputPin>
+        <inputPin id="input">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"only return laser line client, rospy is already initialized"</object>
+        </inputPin>
+        <inputPin id="textAreaWidth">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">275</object>
+        </inputPin>
+        <inputPin id="textAreaHeight">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">36</object>
+        </inputPin>
+        <inputPin id="fontSize">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">14</object>
+        </inputPin>
+      </inputs>
+    </module>
+    <module id="item8" display="Expanded" showPreview="true" position="963, 548" type="Xamla.Graph.Controls.ViewString">
+      <inputs>
+        <inputPin id="data">
+          <connection from="item5.Outputs.output0" />
+        </inputPin>
+        <inputPin id="input">
+          <object type="System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">"only return laser line client, rospy is already initialized"</object>
+        </inputPin>
+        <inputPin id="textAreaWidth">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">278</object>
+        </inputPin>
+        <inputPin id="textAreaHeight">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">35</object>
+        </inputPin>
+        <inputPin id="fontSize">
+          <object type="System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">14</object>
+        </inputPin>
+      </inputs>
+    </module>
+  </body>
+  <compilerSettings debug="false" standardAssemblies="true" />
+  <viewModel>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</viewModel>
+</xgraph>

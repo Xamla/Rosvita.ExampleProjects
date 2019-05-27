@@ -1,0 +1,61 @@
+{
+  "elements": [
+    {
+      "id": "__xacroProcessor",
+      "inputFilename": "robotModel/main.xacro",
+      "outputFilename": "robot.urdf",
+      "type": "xacroProcessor"
+    },
+    {
+      "id": "__moveIt",
+      "selfCollision": {
+        "samplingDensity": 9000,
+        "minCollisionForAlwaysCollidingPairs": 95
+      },
+      "groups": [],
+      "endEffectors": [],
+      "solvers": [
+        "",
+        "trac_ik_kinematics_plugin/TRAC_IKKinematicsPlugin",
+        "kdl_kinematics_plugin/KDLKinematicsPlugin",
+        "lma_kinematics_plugin/LMAKinematicsPlugin",
+        "srv_kinematics_plugin/SrvKinematicsPlugin"
+      ],
+      "solveTypes": [
+        "",
+        "Speed",
+        "Distance",
+        "Manipulation1",
+        "Manipulation2"
+      ],
+      "author": {
+        "name": "",
+        "email": ""
+      },
+      "srdfConfigurationOutputPath": "moveitConfig.yaml",
+      "launchFileOutputPath": "moveit.launch",
+      "respawn": true,
+      "respawnDelay": 0.0,
+      "type": "MoveIt"
+    },
+    {
+      "id": "__customLaunchFile",
+      "fileName": "custom.launch",
+      "type": "CustomLaunchFile"
+    },
+    {
+      "id": "AravisCamera_1",
+      "enabled": true,
+      "exposure": 150000,
+      "serialNumber": "4103130811",
+      "type": "AravisCamera"
+    },
+    {
+      "id": "AravisCamera_2",
+      "enabled": true,
+      "exposure": 150000,
+      "serialNumber": "4103189394",
+      "type": "AravisCamera"
+    }
+  ]
+}

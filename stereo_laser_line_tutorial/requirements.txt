@@ -1,0 +1,9 @@
+ptvsd==4.1.4
+torchfile
+empy
+coloredlogs
+jstyleson
+structlog
+colorama
+pytorch-ignite
+tqdm
