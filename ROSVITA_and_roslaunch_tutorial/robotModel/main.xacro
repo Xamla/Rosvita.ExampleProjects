@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="ROSVITA_and_roslaunch_tutorial" xmlns:xacro="http://ros.org/wiki/xacro" xmlns:xamla="http://www.xamla.com/">
+  <xacro:property name="pi" value="3.1415926535897931" />
+  <link name="world" />
+</robot>
